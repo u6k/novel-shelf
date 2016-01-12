@@ -3,7 +3,7 @@ server:
 
 info:
     name: novel-shelf-server
-    version: 0.0.1-SNAPSHOT
+    version: 0.0.1
 
 spring:
     datasource:
