@@ -1,0 +1,21 @@
+server:
+    port: 41209
+
+info:
+    name: novel-shelf-server
+    version: 0.0.1
+
+spring:
+    datasource:
+        url: ${NOVEL_SHELF_DS_URL}
+        username: ${NOVEL_SHELF_DS_USER}
+        password: ${NOVEL_SHELF_DS_PASS}
+        driverClassName: com.mysql.jdbc.Driver
+    jpa:
+        hibernate:
+            ddl-auto: none
+            dialect: org.hibernate.dialect.MySQLDialect
+
+logging:
+    level:
+        org.springframework.web: DEBUG
