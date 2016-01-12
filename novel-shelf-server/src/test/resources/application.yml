@@ -1,0 +1,19 @@
+server:
+    port: 41209
+
+info:
+    name: novel-shelf-server
+    version: 0.0.1-SNAPSHOT
+
+spring:
+    datasource:
+        url: jdbc:h2:mem:test
+        driverClassName: org.h2.Driver
+    jpa:
+        hibernate:
+            ddl-auto: update
+            dialect: org.hibernate.dialect.H2Dialect
+
+logging:
+    level:
+        org.springframework.web: DEBUG
